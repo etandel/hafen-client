@@ -1,0 +1,10 @@
+# python
+__pycache__
+*.pyc
+.mypy_cache
+.pytest_cache
+.coverage
+dist/
+
+# vim et al
+.*.sw?

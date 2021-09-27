@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hafen-client"
+version = "0.1.0"
+description = ""
+authors = ["Elias Tandel <elias.tandel@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.7.4"
+pydantic = "^1.8.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-asyncio = "^0.15.1"
+pytest-cov = "^2.12.1"
+mypy = "^0.910"
+black = "^21.9b0"
+ipython = "^7.28.0"
+aioresponses = "^0.7.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
