@@ -6,9 +6,9 @@ RUNNER ?= poetry run
 
 all: black-format check-all
 
-check-all: black-check linters test
+check-all: linters test
 
-linters: mypy
+linters: black-check mypy flake8
 
 black-format:
 	$(RUNNER) black $(MODULES)

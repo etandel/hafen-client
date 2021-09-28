@@ -44,7 +44,7 @@ class HafenClient:
             return parse_raw_as(Response[List[Corpus]], await resp.text()).data
 
     async def create_corpus(self, data: CreateCorpus) -> Corpus:
-        url = self._get_url(f"corpora/")
+        url = self._get_url("corpora/")
         async with self._session.post(url, data=data.json(exclude_unset=True)) as resp:
             resp.raise_for_status()
             return parse_raw_as(Response[Corpus], await resp.text()).data
